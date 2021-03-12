@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.user {
+  margin: 5rem 10rem;
+  padding: 3rem 4rem;
+  background-color: $color-primary;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2.5rem rgba(#000, 0.17);
+
+  &__name {
+    margin-bottom: 3rem;
+    &--added {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  &__bloglist {
+    @include hide-list;
+    padding: 1rem;
+
+    &--item {
+      font-size: 1.7rem;
+      padding: 1rem;
+      border-radius: 0.7rem;
+    }
+  }
+}
+
+.user-stripe-li:nth-child(odd) {
+  background-color: $color-primary-lighter;
+}

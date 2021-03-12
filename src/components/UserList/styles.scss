@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+@import '../../styles/typography';
+
+.users {
+  padding: 5rem 11rem;
+
+  &__table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    &--title {
+      padding: 1rem;
+      text-align: left;
+    }
+
+    &--totals {
+      padding-left: 11rem;
+      border-radius: 0 0.7rem 0.7rem 0;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__list {
+    &--items {
+      padding: 1rem;
+      text-align: left;
+      border-radius: 0.7rem 0 0 0.7rem;
+      font-size: 1.7rem;
+    }
+
+    &--link:link,
+    &--link:visited {
+      text-decoration: none;
+      color: $color-text;
+      display: block;
+      transition: all 0.2;
+
+      &:hover,
+      &:active {
+        color: $color-text-hover;
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+.tr:nth-child(odd) {
+  background-color: $color-primary;
+}

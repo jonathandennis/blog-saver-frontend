@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* //1rem = 10px
+    // shrinks font size at 1200px
+    //@media only screen and (max-width: $bp-largest) {
+        //font-size: 50%;} */
+}
+
+body {
+  font-family: 'lato', sans-serif;
+  font-weight: 400;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+.header {
+  padding: 2rem 4rem;
+
+  &__title {
+    margin-top: 3rem;
+    padding: 3rem 5rem;
+  }
+
+  &__text {
+    margin: 0 6rem;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.blogs {
+  width: max-content;
+  padding: 2rem 9rem;
+  &__list {
+    @include hide-list;
+
+    &--li {
+      font-size: 1.7rem;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      margin-top: 0.2rem;
+    }
+
+    &--link:link,
+    &--link:visited {
+      text-decoration: none;
+      color: $color-text;
+      display: block;
+      transition: all 0.2;
+
+      &:hover,
+      &:active {
+        color: $color-text-hover;
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+.stripe-li:nth-child(odd) {
+  background-color: $color-primary;
+}
